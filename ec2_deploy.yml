@@ -6,10 +6,10 @@
     - name: Launch EC2 Instance
       ec2:
         instance_type: t2.micro
-        image: ami-0f9fc25dd2506cf6d
+        image: ami-0022f774911c1d690
         region: us-east-1
         key_name: devops
-        vpc_subnet_id: subnet-08be80418ecfdcd70
+        vpc_subnet_id: subnet-0caac33366b618e1e
         assign_public_ip: yes
         wait: yes
         count: 1
