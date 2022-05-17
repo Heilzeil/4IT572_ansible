@@ -8,8 +8,8 @@
         instance_type: t2.micro
         image: ami-0022f774911c1d690
         region: us-east-1
-        key_name: devops
-        vpc_subnet_id: subnet-0caac33366b618e1e
+        key_name: pomodoro
+        vpc_subnet_id: subnet-0bd38adf44fdd0d0c
         assign_public_ip: yes
         wait: yes
         count: 1
@@ -57,7 +57,7 @@
       become: yes
     - name: Get eshop from GIT
       git:
-        repo: 'https://github.com/Heilzeil/4IT572_docker.git'
+        repo: 'https://github.com/Heilzeil/4IT572_final.git'
         dest: ./app
     - name: Build Docker with eshop
       shell: cd app && docker build -t myeshop:latest .
