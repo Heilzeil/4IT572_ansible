@@ -3,7 +3,7 @@
   connection: local
 
   tasks:
-    - name: Launch EC2 Instance
+    - name: Launch EC2 Instance 2
       ec2:
         instance_type: t2.micro
         image: ami-0022f774911c1d690
